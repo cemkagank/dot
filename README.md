@@ -1,4 +1,4 @@
-#Dotfiles for Archlinux system
+# Dotfiles for Archlinux system
 
 ## Usage
 ```bash
