@@ -1,0 +1,11 @@
+import = ["/home/cem/dot/.config/alacritty/themes/nordic.toml"]
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+opacity = 0.8
+
+[font]
+size = 12
+

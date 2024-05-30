@@ -1,0 +1,25 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+
+[custom.files]
+description = "Show files count for current directory"
+command = "find ./ -maxdepth 1 -type f | wc -l"
+format = "📝[$output]($style) "
+style = "white"
+when = "true"
+
+[custom.directories]
+description = "Show directory count count for current directory"
+command = "find ./ -maxdepth 1 -type d | tail -n +2 | wc -l"
+format = "📁[$output]($style) "
+style = "blue"
+when = "true"
+
+
+
+[custom.lastcommit]
+description = "Display last commit hash and message"
+command = "git show -s --format='%h \"%s\"'"
+when = 'git rev-parse --is-inside-work-tree 2> /dev/null'
+style = "bright-yellow bold"
+format = "[$output]($style) "
