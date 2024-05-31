@@ -4,7 +4,7 @@ vim.g.have_nerd_font = true
 
 if vim.g.neovide then
 	vim.o.guifont = "Source Code Pro:h9"
-	vim.g.neovide_transparency = 0.6
+	vim.g.neovide_transparency = 0.7
 end
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
