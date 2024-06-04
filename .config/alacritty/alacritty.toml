@@ -1,11 +1,15 @@
-import = ["/home/cem/dot/.config/alacritty/themes/nordic.toml"]
+import = ["/home/cem/dot/.config/alacritty/themes/gruvbox_dark.toml"]
+
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
-opacity = 0.8
+#opacity = 0.8
 
 [font]
-size = 12
+normal = {family = "FixedsysExcelsior Nerd Font" , style = "Regular"}
+bold = {family = "FixedsysExcelsior Nerd Font" , style = "Regular"}
+#normal = {family = "Fira Code" , style = "Regular"}
+size = 13
 

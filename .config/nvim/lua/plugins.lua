@@ -9,6 +9,22 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 	"Mofiqul/dracula.nvim",
+	-- lazy.nvim
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		opts = {
+			-- add any options here
+		},
+		dependencies = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		},
+	},
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
@@ -63,7 +79,7 @@ require("lazy").setup({
 		priority = 1000,
 		config = true,
 		opts = {
-			transparent_mode = true,
+			--transparent_mode = true,
 			...,
 		},
 		init = function()
@@ -631,7 +647,7 @@ require("lazy").setup({
 				default = { "Identifier", "#7C3AED" },
 				test = { "Identifier", "#FF00FF" },
 				impl = { "#13d446" },
-				extra = { "#b81ac9" },
+				extra = { "#42cbf5" },
 			},
 			search = {
 				command = "rg",

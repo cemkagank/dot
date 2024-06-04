@@ -42,6 +42,7 @@ rsblocks &
 blueman-applet &
 picom --animations -b --focus-exclude "x = 0 && y = 0 && override_redirect = true" &
 nm-applet &
+urxvtd -q &
 xset r rate 300 50 &
 exec dwm
 xrandr --output eDP-1-1 --set "PRIME Synchronization" 1 &

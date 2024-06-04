@@ -16,3 +16,5 @@ vim.keymap.set("n", "<A-Right>", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<A-Left>", "<cmd>bprevious<CR>")
 vim.keymap.set("n", "<A-w>", "<cmd>bd<CR>")
 vim.keymap.set("n", "<C-p>", "<cmd>BufferLinePick<CR>")
+
+vim.keymap.set("n", "<C-r>", "<cmd>!make ; make run<CR>", { desc = "Make Run" })

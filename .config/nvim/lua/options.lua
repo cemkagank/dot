@@ -3,8 +3,10 @@ vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
 if vim.g.neovide then
-	vim.o.guifont = "Source Code Pro:h9"
-	vim.g.neovide_transparency = 0.7
+	--vim.o.guifont = "FixedsysExcelsior Nerd Font:h9"
+	vim.o.guifont = "Source Code Pro:h8"
+	--vim.g.neovide_transparency = 0.7
+	vim.cmd.colorscheme("dracula")
 end
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
@@ -63,10 +65,6 @@ vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
---
---
---
---
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
