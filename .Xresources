@@ -1,4 +1,8 @@
-
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintfull
 URxvt.font:		xft:Source Code Pro:pixelsize=12,xft:Noto Color Emoji:width=300,xft:JetBrainsMono Nerd Font:pixelsize=9
 
 !special

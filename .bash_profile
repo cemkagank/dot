@@ -2,6 +2,7 @@
 # ~/.bash_profile
 #
 
+PATH="$PATH:/home/cem/.scripts/"
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 . "$HOME/.cargo/env"
 

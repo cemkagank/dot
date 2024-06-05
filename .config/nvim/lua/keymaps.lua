@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<CR>")
+vim.keymap.set("n", "<leader>Tt", "<cmd>TodoTelescope<CR>")
 
 -- move the highlighted text with Alt up and Alt Down
 vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv")
@@ -15,6 +15,5 @@ vim.keymap.set("n", "<leader>n", "<cmd>Neotree toggle<CR>", { desc = "[N]eotree 
 vim.keymap.set("n", "<A-Right>", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<A-Left>", "<cmd>bprevious<CR>")
 vim.keymap.set("n", "<A-w>", "<cmd>bd<CR>")
-vim.keymap.set("n", "<C-p>", "<cmd>BufferLinePick<CR>")
 
-vim.keymap.set("n", "<C-r>", "<cmd>!make ; make run<CR>", { desc = "Make Run" })
+vim.keymap.set("n", "<C-p>", "<cmd>!make ; make run<CR>", { desc = "Make Run" })

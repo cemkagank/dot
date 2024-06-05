@@ -2,7 +2,6 @@
 # ~/.bashrc
 #
 
-
 shopt -s autocd
 
 # If not running interactively, don't do anything
@@ -22,4 +21,3 @@ PS1='[\u@\h \W]\$ '
 . "$HOME/.cargo/env"
 colorscript random
 eval "$(starship init bash)"
-

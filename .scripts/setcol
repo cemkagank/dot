@@ -1,0 +1,5 @@
+#!/bin/bash
+
+get=$(tty)
+select="$(find $HOME/.scripts/data/setcol | fzf)"
+cat "$select" >> "$get"

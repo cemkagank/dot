@@ -38,7 +38,7 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 xrandr --dpi 96
 nitrogen --restore &
-rsblocks &
+mblocks &
 blueman-applet &
 picom --animations -b --focus-exclude "x = 0 && y = 0 && override_redirect = true" &
 nm-applet &
