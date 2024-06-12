@@ -1,5 +1,5 @@
 #!/bin/bash
 
 get=$(tty)
-select="$(find $HOME/.scripts/data/setcol | fzf)"
+select="$(find $HOME/.scripts/data/setcol  | fzf  --preview "cat {} >> $get; fastfetch")"
 cat "$select" >> "$get"
